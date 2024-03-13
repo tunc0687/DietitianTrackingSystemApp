@@ -1,0 +1,6 @@
+@DietitianTrackingSystemApp.API_HostAddress = http://localhost:5180
+
+GET {{DietitianTrackingSystemApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

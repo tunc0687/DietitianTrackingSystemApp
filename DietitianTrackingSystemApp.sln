@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{955EB7E1-6C6E-48A3-BAA4-1DEF60EFA6CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{09A8729D-7AC9-43B8-9A67-7AAE9015EAA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{79B77818-71B4-48A5-AEBA-64364CDEB935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2E447752-6B96-47AC-8E11-F71339A479C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietitianTrackingSystemApp.Service", "Services\DietitianTrackingSystemApp.Service\DietitianTrackingSystemApp.Service.csproj", "{ECC0F670-5D19-43CA-9A19-7D79594E663C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietitianTrackingSystemApp.Data", "Data\DietitianTrackingSystemApp.Data\DietitianTrackingSystemApp.Data.csproj", "{BF384CC6-9F4A-439D-956A-28CA96BC52C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietitianTrackingSystemApp.Data.Domain", "Data\DietitianTrackingSystemApp.Data.Domain\DietitianTrackingSystemApp.Data.Domain.csproj", "{6F882BEB-8016-43BB-B353-1C4C98124DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietitianTrackingSystemApp.Core", "Core\DietitianTrackingSystemApp.Core\DietitianTrackingSystemApp.Core.csproj", "{B6047523-1932-41B3-A5CA-0486FEEFEEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietitianTrackingSystemApp.API", "Applications\DietitianTrackingSystemApp.API\DietitianTrackingSystemApp.API.csproj", "{63FC7437-3C9C-43BC-9A26-77C059AA5A26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC0F670-5D19-43CA-9A19-7D79594E663C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC0F670-5D19-43CA-9A19-7D79594E663C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC0F670-5D19-43CA-9A19-7D79594E663C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC0F670-5D19-43CA-9A19-7D79594E663C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF384CC6-9F4A-439D-956A-28CA96BC52C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF384CC6-9F4A-439D-956A-28CA96BC52C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF384CC6-9F4A-439D-956A-28CA96BC52C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF384CC6-9F4A-439D-956A-28CA96BC52C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F882BEB-8016-43BB-B353-1C4C98124DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F882BEB-8016-43BB-B353-1C4C98124DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F882BEB-8016-43BB-B353-1C4C98124DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F882BEB-8016-43BB-B353-1C4C98124DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6047523-1932-41B3-A5CA-0486FEEFEEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6047523-1932-41B3-A5CA-0486FEEFEEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6047523-1932-41B3-A5CA-0486FEEFEEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6047523-1932-41B3-A5CA-0486FEEFEEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FC7437-3C9C-43BC-9A26-77C059AA5A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FC7437-3C9C-43BC-9A26-77C059AA5A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FC7437-3C9C-43BC-9A26-77C059AA5A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FC7437-3C9C-43BC-9A26-77C059AA5A26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECC0F670-5D19-43CA-9A19-7D79594E663C} = {2E447752-6B96-47AC-8E11-F71339A479C1}
+		{BF384CC6-9F4A-439D-956A-28CA96BC52C4} = {09A8729D-7AC9-43B8-9A67-7AAE9015EAA4}
+		{6F882BEB-8016-43BB-B353-1C4C98124DCA} = {09A8729D-7AC9-43B8-9A67-7AAE9015EAA4}
+		{B6047523-1932-41B3-A5CA-0486FEEFEEF3} = {955EB7E1-6C6E-48A3-BAA4-1DEF60EFA6CD}
+		{63FC7437-3C9C-43BC-9A26-77C059AA5A26} = {79B77818-71B4-48A5-AEBA-64364CDEB935}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {492B6AEC-571B-4CBE-91FC-EC7AAE27E69E}
+	EndGlobalSection
+EndGlobal
