@@ -21,6 +21,8 @@ namespace DietitianTrackingSystemApp.Data.Domain.Entities
         public virtual DbSet<ClientDietTemplate> ClientDietTemplates { get; set; } = null!;
         public virtual DbSet<DietTemplate> DietTemplates { get; set; } = null!;
 
+        onmo
+
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
         //    modelBuilder.Entity<City>(entity =>
