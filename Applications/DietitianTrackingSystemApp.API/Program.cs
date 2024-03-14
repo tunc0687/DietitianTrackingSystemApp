@@ -1,14 +1,17 @@
+using DietitianTrackingSystemApp.Data.Domain.Entities;
 using DietitianTrackingSystemApp.Service.DependencyResolvers.Microsoft;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDependencies(builder.Configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDependencies(builder.Configuration);
 
 var app = builder.Build();
 

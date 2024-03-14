@@ -19,8 +19,8 @@ namespace DietitianTrackingSystemApp.Data.Domain.Configurations
                 x.ConsultantUserId
             }).IsUnique();
 
-            builder.HasOne(x => x.ClientUser).WithMany(x => x.ClientUsers).HasForeignKey(x => x.ClientUserId);
-            builder.HasOne(x => x.ConsultantUser).WithMany(x => x.ConsultantUsers).HasForeignKey(x => x.ConsultantUserId);
+            builder.HasOne(x => x.ClientUser).WithMany(x => x.ClientUsers).HasForeignKey(x => x.ClientUserId).OnDelete(DeleteBehavior.ClientSetNull);
+            builder.HasOne(x => x.ConsultantUser).WithMany(x => x.ConsultantUsers).HasForeignKey(x => x.ConsultantUserId).OnDelete(DeleteBehavior.ClientSetNull);
         }
     }
 }
