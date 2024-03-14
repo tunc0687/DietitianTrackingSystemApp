@@ -7,6 +7,8 @@ namespace DietitianTrackingSystemApp.Data.Domain.Entities
     {
         public User()
         {
+            InverseCreatedByNavigation = new HashSet<User>();
+            InverseUpdatedByNavigation = new HashSet<User>();
             RoleCreatedByNavigations = new HashSet<Role>();
             RoleUpdatedByNavigations = new HashSet<Role>();
             UserRoleCreatedByNavigations = new HashSet<UserRole>();
@@ -33,6 +35,8 @@ namespace DietitianTrackingSystemApp.Data.Domain.Entities
 
         public virtual User? CreatedByNavigation { get; set; }
         public virtual User? UpdatedByNavigation { get; set; }
+        public virtual ICollection<User> InverseCreatedByNavigation { get; set; }
+        public virtual ICollection<User> InverseUpdatedByNavigation { get; set; }
         public virtual ICollection<Role> RoleCreatedByNavigations { get; set; }
         public virtual ICollection<Role> RoleUpdatedByNavigations { get; set; }
         public virtual ICollection<UserRole> UserRoleCreatedByNavigations { get; set; }
